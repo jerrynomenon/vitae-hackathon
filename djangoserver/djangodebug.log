@@ -1,0 +1,233 @@
+(0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+"GET /tasteful/index.html HTTP/1.1" 304 0
+"GET /tasteful/app.js HTTP/1.1" 304 0
+"GET /tasteful/style.css HTTP/1.1" 304 0
+"GET /tasteful/app.js HTTP/1.1" 304 0
+"GET /submitprofile?username=reddit.com/u/wadawalnut&platform=reddit HTTP/1.1" 200 2
+(0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+"GET /tasteful/index.html HTTP/1.1" 304 0
+"GET /tasteful/app.js HTTP/1.1" 304 0
+"GET /tasteful/style.css HTTP/1.1" 304 0
+"GET /tasteful/app.js HTTP/1.1" 304 0
+"GET /submitprofile?username=reddit.com/u/wadawalnut&platform=reddit HTTP/1.1" 200 2
+(0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+"GET /tasteful/index.html HTTP/1.1" 304 0
+"GET /tasteful/app.js HTTP/1.1" 304 0
+"GET /tasteful/style.css HTTP/1.1" 304 0
+"GET /tasteful/app.js HTTP/1.1" 304 0
+Internal Server Error: /submitprofile
+Traceback (most recent call last):
+  File "/usr/lib/python3.6/site-packages/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/usr/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/harwiltz/hackerfest/Hackerfest-scrape/djangoserver/djangoserver/views.py", line 27, in parseprofile
+    return JsonResponse({score: 666});
+UnboundLocalError: local variable 'score' referenced before assignment
+"GET /submitprofile?username=reddit.com/u/wadawalnut&platform=reddit HTTP/1.1" 500 14811
+(0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+"GET /tasteful/index.html HTTP/1.1" 304 0
+"GET /tasteful/app.js HTTP/1.1" 304 0
+"GET /tasteful/style.css HTTP/1.1" 304 0
+"GET /tasteful/app.js HTTP/1.1" 304 0
+"GET /submitprofile?username=reddit.com/u/wadawalnut&platform=reddit HTTP/1.1" 200 14
+(0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+"GET /tasteful/index.html HTTP/1.1" 304 0
+"GET /tasteful/app.js HTTP/1.1" 304 0
+"GET /tasteful/style.css HTTP/1.1" 304 0
+"GET /tasteful/app.js HTTP/1.1" 304 0
+Internal Server Error: /submitprofile
+Traceback (most recent call last):
+  File "/usr/lib/python3.6/site-packages/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/usr/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/harwiltz/hackerfest/Hackerfest-scrape/djangoserver/djangoserver/views.py", line 17, in parseprofile
+    comments = parser.get_all_comments(user,100)
+  File "/home/harwiltz/hackerfest/Hackerfest-scrape/djangoserver/djangoserver/scripts/parser.py", line 57, in get_all_comments
+    json = get_json_response(rapi_comments(username, limit, after))
+  File "/home/harwiltz/hackerfest/Hackerfest-scrape/djangoserver/djangoserver/scripts/parser.py", line 34, in rapi_comments
+    return "https://www.reddit.com/user/" + username + "/comments.json?limit=" + str(limit) + "&before=" + after + "&after=null"
+TypeError: must be str, not list
+"GET /submitprofile?username=reddit.com/u/wadawalnut&platform=reddit HTTP/1.1" 500 15187
+(0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+"GET /tasteful/index.html HTTP/1.1" 304 0
+"GET /tasteful/app.js HTTP/1.1" 304 0
+"GET /tasteful/style.css HTTP/1.1" 304 0
+"GET /tasteful/app.js HTTP/1.1" 304 0
+Internal Server Error: /submitprofile
+Traceback (most recent call last):
+  File "/usr/lib/python3.6/site-packages/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/usr/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/harwiltz/hackerfest/Hackerfest-scrape/djangoserver/djangoserver/views.py", line 19, in parseprofile
+    points = parser.vt_parse_items(items, {}, set(parser.sub_list))
+  File "/home/harwiltz/hackerfest/Hackerfest-scrape/djangoserver/djangoserver/scripts/parser.py", line 185, in vt_parse_items
+    points["total_ck"] = CK_MULITPLIER * total_ck
+NameError: name 'CK_MULITPLIER' is not defined
+"GET /submitprofile?username=reddit.com/u/wadawalnut&platform=reddit HTTP/1.1" 500 14963
+(0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+"GET /tasteful/index.html HTTP/1.1" 304 0
+"GET /tasteful/app.js HTTP/1.1" 304 0
+"GET /tasteful/style.css HTTP/1.1" 304 0
+"GET /tasteful/app.js HTTP/1.1" 304 0
+Internal Server Error: /submitprofile
+Traceback (most recent call last):
+  File "/usr/lib/python3.6/site-packages/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/usr/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/harwiltz/hackerfest/Hackerfest-scrape/djangoserver/djangoserver/views.py", line 20, in parseprofile
+    score = parser.vt_get_score(points)
+  File "/home/harwiltz/hackerfest/Hackerfest-scrape/djangoserver/djangoserver/scripts/parser.py", line 192, in vt_get_score
+    return points["total_ck"] + points["total_lk"] + points["total_rep"] + points["gold"] + points["posts"];
+KeyError: 'gold'
+"GET /submitprofile?username=reddit.com/u/wadawalnut&platform=reddit HTTP/1.1" 500 14932
+(0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+"GET /tasteful/index.html HTTP/1.1" 304 0
+"GET /tasteful/app.js HTTP/1.1" 304 0
+"GET /tasteful/style.css HTTP/1.1" 304 0
+"GET /tasteful/app.js HTTP/1.1" 304 0
+"GET /submitprofile?username=reddit.com/u/wadawalnut&platform=reddit HTTP/1.1" 200 273
+"GET /tasteful/index.html HTTP/1.1" 200 1020
+"GET /tasteful/app.js HTTP/1.1" 304 0
+"GET /tasteful/style.css HTTP/1.1" 200 444
+"GET /tasteful/app.js HTTP/1.1" 304 0
+"GET /tasteful/index.html HTTP/1.1" 304 0
+"GET /tasteful/app.js HTTP/1.1" 304 0
+"GET /tasteful/style.css HTTP/1.1" 200 445
+"GET /tasteful/app.js HTTP/1.1" 304 0
+"GET /tasteful/index.html HTTP/1.1" 304 0
+"GET /tasteful/app.js HTTP/1.1" 304 0
+"GET /tasteful/style.css HTTP/1.1" 200 475
+"GET /tasteful/app.js HTTP/1.1" 304 0
+"GET /submitprofile?username=reddit.com/u/wadawalnut&platform=reddit HTTP/1.1" 200 275
+"GET /tasteful/index.html HTTP/1.1" 200 1020
+"GET /tasteful/app.js HTTP/1.1" 200 3272
+"GET /tasteful/style.css HTTP/1.1" 304 0
+"GET /tasteful/app.js HTTP/1.1" 304 0
+"GET /tasteful/index.html HTTP/1.1" 304 0
+"GET /tasteful/app.js HTTP/1.1" 200 3274
+"GET /tasteful/style.css HTTP/1.1" 304 0
+"GET /tasteful/app.js HTTP/1.1" 304 0
+"GET /tasteful/index.html HTTP/1.1" 304 0
+"GET /tasteful/app.js HTTP/1.1" 304 0
+"GET /tasteful/style.css HTTP/1.1" 304 0
+"GET /tasteful/app.js HTTP/1.1" 304 0
+"GET /tasteful/index.html HTTP/1.1" 304 0
+"GET /tasteful/app.js HTTP/1.1" 200 3286
+"GET /tasteful/style.css HTTP/1.1" 304 0
+"GET /tasteful/app.js HTTP/1.1" 304 0
+"GET /submitprofile?username=reddit.com/u/wadawalnut&platform=reddit HTTP/1.1" 200 275
+"GET /tasteful/index.html HTTP/1.1" 304 0
+"GET /tasteful/app.js HTTP/1.1" 200 3286
+"GET /tasteful/style.css HTTP/1.1" 304 0
+"GET /tasteful/app.js HTTP/1.1" 304 0
+"GET /tasteful/index.html HTTP/1.1" 304 0
+"GET /tasteful/app.js HTTP/1.1" 200 3292
+"GET /tasteful/style.css HTTP/1.1" 304 0
+"GET /tasteful/app.js HTTP/1.1" 304 0
+"GET /tasteful/index.html HTTP/1.1" 304 0
+"GET /tasteful/app.js HTTP/1.1" 200 3295
+"GET /tasteful/style.css HTTP/1.1" 304 0
+"GET /tasteful/app.js HTTP/1.1" 304 0
+"GET /tasteful/index.html HTTP/1.1" 304 0
+"GET /tasteful/app.js HTTP/1.1" 200 3295
+"GET /tasteful/style.css HTTP/1.1" 304 0
+"GET /tasteful/app.js HTTP/1.1" 304 0
+"GET /tasteful/index.html HTTP/1.1" 304 0
+"GET /tasteful/app.js HTTP/1.1" 200 3295
+"GET /tasteful/style.css HTTP/1.1" 304 0
+"GET /tasteful/app.js HTTP/1.1" 304 0
+"GET /tasteful/index.html HTTP/1.1" 304 0
+"GET /tasteful/app.js HTTP/1.1" 200 3289
+"GET /tasteful/style.css HTTP/1.1" 304 0
+"GET /tasteful/app.js HTTP/1.1" 304 0
+"GET /submitprofile?username=reddit.com/u/wadawalnut&platform=reddit HTTP/1.1" 200 272
+"GET /tasteful/index.html HTTP/1.1" 304 0
+"GET /tasteful/app.js HTTP/1.1" 304 0
+"GET /tasteful/style.css HTTP/1.1" 304 0
+"GET /tasteful/app.js HTTP/1.1" 304 0
+"GET /tasteful/index.html HTTP/1.1" 304 0
+"GET /tasteful/app.js HTTP/1.1" 200 3397
+"GET /tasteful/style.css HTTP/1.1" 304 0
+"GET /tasteful/app.js HTTP/1.1" 304 0
+"GET /tasteful/index.html HTTP/1.1" 304 0
+"GET /tasteful/app.js HTTP/1.1" 304 0
+"GET /tasteful/style.css HTTP/1.1" 304 0
+"GET /tasteful/app.js HTTP/1.1" 304 0
+"GET /tasteful/index.html HTTP/1.1" 304 0
+"GET /tasteful/app.js HTTP/1.1" 200 3410
+"GET /tasteful/style.css HTTP/1.1" 304 0
+"GET /tasteful/app.js HTTP/1.1" 304 0
+"GET /tasteful/index.html HTTP/1.1" 304 0
+"GET /tasteful/app.js HTTP/1.1" 200 3287
+"GET /tasteful/style.css HTTP/1.1" 304 0
+"GET /tasteful/app.js HTTP/1.1" 304 0
+"GET /tasteful/index.html HTTP/1.1" 304 0
+"GET /tasteful/app.js HTTP/1.1" 304 0
+"GET /tasteful/style.css HTTP/1.1" 304 0
+"GET /tasteful/app.js HTTP/1.1" 304 0
+"GET /tasteful/index.html HTTP/1.1" 304 0
+"GET /tasteful/app.js HTTP/1.1" 200 3345
+"GET /tasteful/style.css HTTP/1.1" 304 0
+"GET /tasteful/app.js HTTP/1.1" 304 0
+"GET /tasteful/index.html HTTP/1.1" 304 0
+"GET /tasteful/app.js HTTP/1.1" 200 3346
+"GET /tasteful/style.css HTTP/1.1" 304 0
+"GET /tasteful/app.js HTTP/1.1" 304 0
+"GET /tasteful/index.html HTTP/1.1" 304 0
+"GET /tasteful/app.js HTTP/1.1" 200 3346
+"GET /tasteful/style.css HTTP/1.1" 304 0
+"GET /tasteful/app.js HTTP/1.1" 304 0

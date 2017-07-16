@@ -1,0 +1,32 @@
+body {
+	background-color: #ff6666;
+}
+
+.formsection {
+	background-color: rgba(255,255,255,200);
+	margin: 5%;
+	padding: 10%;
+}
+
+.profilelistview {
+	background-color: rgba(64,64,64,100);
+	margin: 5%;
+	padding: 10%;
+	color: #bbbbbb;
+	text-align: center;
+}
+
+input {
+	background-color: rgba(64,64,64,120);
+	border: none;
+	border-radius: 2px;
+	color: #aaaaaa;
+}
+
+header {
+	background-color: rgba(0,0,0,128);
+	color: #bbbbbb;
+	padding: 10px;
+	margin: 0px;
+	font-family: "Pavanam";
+}

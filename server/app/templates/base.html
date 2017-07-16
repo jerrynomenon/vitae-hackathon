@@ -1,0 +1,17 @@
+<html>
+  <head>
+    {% if title is defined %}
+        <title>Scrapping {{ title }}</title>
+    {% else %}
+        <title>Scrapping</title>
+    {% endif %}
+      <script
+          src="https://code.jquery.com/jquery-3.2.1.min.js"
+          integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+          crossorigin="anonymous"></script>
+      <script src="{{ url_for('static', filename='client.js') }}"></script>
+  </head>
+  <body>
+    {% block body %}{% endblock %}
+  </body>
+</html>

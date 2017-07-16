@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block body %}
+    <div>Profile Scrapper: <a href="/index">Home</a></div>
+    <hr>
+    <form action="/scrape" method="get">
+        <strong>Select scrapping sources:</strong>
+        <br>
+        {% for source in sources %}
+            <input type="checkbox" name="{{source}}" value="{{source}}"> {{source}}<br>
+        {% endfor %}
+        <br>
+        <strong>Select metrics:</strong>
+        <br>
+        {% for metric in metrics %}
+            <input type="checkbox" name="{{metric}}" value="{{metric}}"> {{metric}}<br>
+        {% endfor %}
+        <br>
+        <input type="submit" value="Submit">
+    </form>
+    <div id="dump">{{data}}</div>
+    <br>
+{% endblock %}
